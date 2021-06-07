@@ -17,7 +17,7 @@ namespace GraphQLDemo.Service
         {
             /// you need to update it to right DB and proper container.
            /// as of now I have used VWAC DB and Service collection to test.
-            this.Client = factory.CreateCosmosDbClient("AccountEndpoint=https://patelma-hyb-cosmosdb.documents.azure.com:443/;AccountKey=jPR1AKo0Uc3ZzcbuetuGypSijxDd4D5GhTRt1OuVLi63Jir6y7SqBDkAmSuP0B5oEzxyQMpMTkEDuh8EZfzuCw==;", "VWAC");
+            this.Client = factory.CreateCosmosDbClient("REPLACE ME", "VWAC");
         }
 
         public async Task<Product> CreateProduct(Product product)
